@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}그룹 생성{% endblock %}
+{% block content %}
+  <h2>📘 새로운 독서 그룹 생성</h2>
+  <form method="post" action="/groups/create">
+    <input type="text" name="group_name" placeholder="그룹 이름" required /><br><br>
+    <input type="text" name="description" placeholder="설명 (선택)" /><br><br>
+    <button type="submit">생성하기</button>
+  </form>
+{% endblock %}
